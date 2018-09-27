@@ -2,7 +2,7 @@ import React from 'react'
 
 const MovieReviews = ({ reviews }) => (
   <ul className='review-list'>
-    {reviews.map(review => <li>review.title</li>)}
+    {reviews.map(review => <li>boop</li>)}
   </ul>
 )
 
