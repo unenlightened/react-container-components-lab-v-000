@@ -26,7 +26,7 @@ export default class SearchableMovieReviewsContainer extends Component {
   fetchReviews = () => {
     fetch(URL + this.state.searchTerm + NYT_API_KEY)
       .then(response => response.json())
-      .then(({ results }) => this.setState({ results }))
+      .then(({ results }) => this.setState({ reviews: results }))
   }
 
   handleSubmit = event => {
