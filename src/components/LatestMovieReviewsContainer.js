@@ -14,7 +14,7 @@ export default class LatestMovieReviewsContainer extends Component {
   componentDidMount() {
     fetch('https://api.nytimes.com/svc/movies/v2/reviews/all.json?&api_key=a7781d718add43a8b1afcdb06f8fb0ad')
       .then(response => response.json())
-      .then({({ results }) => this.setState({ results }))
+      .then(({ results }) => this.setState({ results }))
   }
 
   render() {
