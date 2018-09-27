@@ -1,7 +1,7 @@
 import React from 'react'
 
 const MovieReviews = () => {
-  <div></div>
+  <ul className='review-list'></ul>
 }
 
 export default MovieReviews
