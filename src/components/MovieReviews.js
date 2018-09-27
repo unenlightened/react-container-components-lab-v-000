@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MovieReviews = () => {
+const MovieReviews = props => {
   <ul className='review-list'></ul>
 }
 
