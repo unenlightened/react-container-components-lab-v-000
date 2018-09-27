@@ -11,6 +11,12 @@ export default class LatestMovieReviewsContainer extends Component {
     reviews: []
   }
 
+  componentDidMount() {
+    fetch('https://api.nytimes.com/svc/movies/v2/reviews/all.json?')
+      .then(response => response.json())
+      .then(reviews => this.setState({ reviews }))
+  }
+
   render() {
     return <div className='latest-movie-reviews'></div>
   }
