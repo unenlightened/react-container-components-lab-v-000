@@ -12,7 +12,7 @@ export default class LatestMovieReviewsContainer extends Component {
   }
 
   render() {
-    return <div></div>
+    return <div className='late-movie-reviews'></div>
   }
 
 }
